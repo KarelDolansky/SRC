@@ -50,8 +50,15 @@ PCD_HandleTypeDef hpcd_USB_OTG_FS;
 osThreadId_t Task01Handle;
 const osThreadAttr_t Task01_attributes = {
   .name = "Task01",
-  .stack_size = 128 * 4,
+  .stack_size = 256 * 4,
   .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for Task02 */
+osThreadId_t Task02Handle;
+const osThreadAttr_t Task02_attributes = {
+  .name = "Task02",
+  .stack_size = 256 * 4,
+  .priority = (osPriority_t) osPriorityLow,
 };
 /* USER CODE BEGIN PV */
 
@@ -64,6 +71,7 @@ static void MX_LPUART1_UART_Init(void);
 static void MX_USART3_UART_Init(void);
 static void MX_USB_OTG_FS_PCD_Init(void);
 void StartTask01(void *argument);
+void StartTask02(void *argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -132,6 +140,9 @@ int main(void)
   /* Create the thread(s) */
   /* creation of Task01 */
   Task01Handle = osThreadNew(StartTask01, NULL, &Task01_attributes);
+
+  /* creation of Task02 */
+  Task02Handle = osThreadNew(StartTask02, NULL, &Task02_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -395,6 +406,10 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void Task_action(char message){
+	ITM_SendChar(message);
+	ITM_SendChar('\n');
+}
 
 /* USER CODE END 4 */
 
@@ -409,12 +424,37 @@ void StartTask01(void *argument)
 {
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
+	osPriority_t priority;
   for(;;)
   {
-	  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
-    osDelay(500);
+	  priority = osThreadGetPriority(Task02Handle);
+	  Task_action('1');
+	  osThreadSetPriority(Task02Handle, priority+1);
+	  HAL_Delay(500);
+	  //HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+    //osDelay(500);
   }
   /* USER CODE END 5 */
+}
+
+/* USER CODE BEGIN Header_StartTask02 */
+/**
+* @brief Function implementing the Task02 thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartTask02 */
+void StartTask02(void *argument)
+{
+  /* USER CODE BEGIN StartTask02 */
+  /* Infinite loop */
+
+  for(;;)
+  {
+	  Task_action('2');
+    osDelay(500);
+  }
+  /* USER CODE END StartTask02 */
 }
 
 /**

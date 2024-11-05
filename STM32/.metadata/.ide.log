@@ -1741,3 +1741,105 @@
 2024-11-05 15:16:11,393 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 2479mS.
 2024-11-05 15:16:11,395 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 2mS.
 2024-11-05 15:16:11,422 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-11-05 15:37:16,085 [ERROR] RtosPanel:558 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2024-11-05 15:37:19,425 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-11-05 15:37:19,425 [WARN] TasksAndQueuesTab:763 - 128 128
+2024-11-05 15:37:19,425 [WARN] TasksAndQueuesTab:775 - max value is: 750.0
+2024-11-05 15:37:29,280 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 640
+2024-11-05 15:37:29,281 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 163840
+2024-11-05 15:37:37,795 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-11-05 15:37:37,795 [WARN] TasksAndQueuesTab:763 - 256 128
+2024-11-05 15:37:37,796 [WARN] TasksAndQueuesTab:775 - max value is: 750.0
+2024-11-05 15:37:38,852 [INFO] EditThreadDialog:704 - RAM SIZE (in KB): 640
+2024-11-05 15:37:38,853 [INFO] EditThreadDialog:706 - RAM SIZE (in words): 163840
+2024-11-05 15:37:55,425 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-11-05 15:37:55,425 [WARN] TasksAndQueuesTab:763 - 256 128
+2024-11-05 15:37:55,425 [WARN] TasksAndQueuesTab:775 - max value is: 750.0
+2024-11-05 15:37:55,425 [INFO] TasksAndQueuesTab:757 - Dynamic
+2024-11-05 15:37:55,425 [WARN] TasksAndQueuesTab:763 - 256 128
+2024-11-05 15:37:55,425 [WARN] TasksAndQueuesTab:775 - max value is: 750.0
+2024-11-05 15:38:02,009 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 669315048 Bytes (1073741824)
+2024-11-05 15:38:03,217 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 713881576 Bytes (1073741824)
+2024-11-05 15:38:05,023 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 385026456 Bytes (1073741824)
+2024-11-05 15:38:05,446 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FREERTOS
+2024-11-05 15:38:05,447 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-05 15:38:05,447 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-05 15:38:05,447 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: LPUART
+2024-11-05 15:38:05,447 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USB_OTG_FS
+2024-11-05 15:38:05,447 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-05 15:38:05,447 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-05 15:38:05,448 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-05 15:38:05,452 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-11-05 15:38:05,720 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\license.tmp_save
+2024-11-05 15:38:05,930 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\license.tmp
+2024-11-05 15:38:06,123 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\gpio.tmp_save
+2024-11-05 15:38:06,283 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\gpio.tmp
+2024-11-05 15:38:06,924 [WARN] IPConfigManager:3005 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2024-11-05 15:38:06,959 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-11-05 15:38:07,021 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_inc.tmp_save
+2024-11-05 15:38:07,111 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_inc.tmp
+2024-11-05 15:38:07,127 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_kernelInit.tmp_save
+2024-11-05 15:38:07,222 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_kernelInit.tmp
+2024-11-05 15:38:07,239 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_kernelStart.tmp_save
+2024-11-05 15:38:07,320 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_kernelStart.tmp
+2024-11-05 15:38:07,335 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_typedefs.tmp_save
+2024-11-05 15:38:07,416 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_typedefs.tmp
+2024-11-05 15:38:07,429 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_vars.tmp_save
+2024-11-05 15:38:07,519 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_vars.tmp
+2024-11-05 15:38:07,542 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_pfp.tmp_save
+2024-11-05 15:38:07,640 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_pfp.tmp
+2024-11-05 15:38:07,654 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_obj_creat.tmp_save
+2024-11-05 15:38:07,757 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_obj_creat.tmp
+2024-11-05 15:38:07,775 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_default_thread.tmp_save
+2024-11-05 15:38:07,857 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_default_thread.tmp
+2024-11-05 15:38:07,875 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_threads.tmp_save
+2024-11-05 15:38:07,971 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_threads.tmp
+2024-11-05 15:38:08,004 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-11-05 15:38:08,068 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_inc.tmp_save
+2024-11-05 15:38:08,153 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_inc.tmp
+2024-11-05 15:38:08,184 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_kernelInit.tmp_save
+2024-11-05 15:38:08,284 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_kernelInit.tmp
+2024-11-05 15:38:08,307 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_kernelStart.tmp_save
+2024-11-05 15:38:08,406 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_kernelStart.tmp
+2024-11-05 15:38:08,430 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_typedefs.tmp_save
+2024-11-05 15:38:08,530 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_typedefs.tmp
+2024-11-05 15:38:08,560 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_vars.tmp_save
+2024-11-05 15:38:08,678 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_vars.tmp
+2024-11-05 15:38:08,721 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_pfp.tmp_save
+2024-11-05 15:38:08,838 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_pfp.tmp
+2024-11-05 15:38:08,867 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_obj_creat.tmp_save
+2024-11-05 15:38:08,966 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_obj_creat.tmp
+2024-11-05 15:38:08,994 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_default_thread.tmp_save
+2024-11-05 15:38:09,105 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_default_thread.tmp
+2024-11-05 15:38:09,139 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_threads.tmp_save
+2024-11-05 15:38:09,266 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\rtos_threads.tmp
+2024-11-05 15:38:09,296 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Inc\FreeRTOSConfig.h_save
+2024-11-05 15:38:09,456 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Inc\FreeRTOSConfig.h
+2024-11-05 15:38:09,488 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Src\freertos.c_save
+2024-11-05 15:38:09,611 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Src\freertos.c
+2024-11-05 15:38:09,723 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Src\stm32l4xx_it.c_save
+2024-11-05 15:38:10,013 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Src\stm32l4xx_it.c
+2024-11-05 15:38:10,058 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Inc\stm32l4xx_it.h_save
+2024-11-05 15:38:10,231 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Inc\stm32l4xx_it.h
+2024-11-05 15:38:10,357 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Src\stm32l4xx_hal_msp.c_save
+2024-11-05 15:38:10,573 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Src\stm32l4xx_hal_msp.c
+2024-11-05 15:38:10,604 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\system.tmp_save
+2024-11-05 15:38:10,711 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\MXTmpFiles\system.tmp
+2024-11-05 15:38:10,738 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Src\stm32l4xx_hal_timebase_tim.c_save
+2024-11-05 15:38:10,866 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Src\stm32l4xx_hal_timebase_tim.c
+2024-11-05 15:38:10,941 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Inc\stm32l4xx_hal_conf.h_save
+2024-11-05 15:38:11,070 [INFO] CodeEngine:335 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Inc\stm32l4xx_hal_conf.h
+2024-11-05 15:38:11,149 [WARN] IPConfigManager:3554 - IP not found : USB_OTG
+2024-11-05 15:38:11,152 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-05 15:38:11,219 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Inc\main.h_save
+2024-11-05 15:38:11,373 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Inc\main.h
+2024-11-05 15:38:11,410 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Src\main.c_save
+2024-11-05 15:38:11,787 [INFO] CodeEngine:279 - Generated code: C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\Core\Src\main.c
+2024-11-05 15:38:13,314 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 1066mS.
+2024-11-05 15:38:13,326 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-11-05 15:38:13,514 [INFO] ConfigFileManager:1531 - The Die is : DIE470
+2024-11-05 15:38:16,930 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 3604mS.
+2024-11-05 15:38:16,932 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 2mS.
+2024-11-05 15:38:16,955 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-05 15:46:49,062 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] StartTraceHandler.execute(), success : Collect=true
+2024-11-05 15:49:29,364 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out

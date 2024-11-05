@@ -502,3 +502,111 @@ arm-none-eabi-size  HELLO2.elf
   30256	     96	  10080	  40432	   9df0	HELLO2.elf
 Finished building: default.size.stdout
  
+15:44:48 **** Incremental Build of configuration Debug for project HELLO2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4R5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "HELLO2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HELLO2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HELLO2.elf
+ 
+arm-none-eabi-size  HELLO2.elf 
+arm-none-eabi-objdump -h -S HELLO2.elf  > "HELLO2.list"
+   text	   data	    bss	    dec	    hex	filename
+  30956	     96	  10080	  41132	   a0ac	HELLO2.elf
+Finished building: default.size.stdout
+ 
+Finished building: HELLO2.list
+ 
+15:47:32 **** Incremental Build of configuration Debug for project HELLO2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4R5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Task_action':
+../Core/Src/main.c:410:22: warning: passing argument 1 of 'ITM_SendChar' makes integer from pointer without a cast [-Wint-conversion]
+  410 |         ITM_SendChar(&message);
+      |                      ^~~~~~~~
+      |                      |
+      |                      char *
+In file included from ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4r5xx.h:169,
+                 from ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h:163,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h:29,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32l4xx_hal_conf.h:258,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Include/core_cm4.h:2059:49: note: expected 'uint32_t' {aka 'long unsigned int'} but argument is of type 'char *'
+ 2059 | __STATIC_INLINE uint32_t ITM_SendChar (uint32_t ch)
+      |                                        ~~~~~~~~~^~
+arm-none-eabi-gcc -o "HELLO2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HELLO2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HELLO2.elf
+ 
+arm-none-eabi-size  HELLO2.elf 
+arm-none-eabi-objdump -h -S HELLO2.elf  > "HELLO2.list"
+   text	   data	    bss	    dec	    hex	filename
+  30956	     96	  10080	  41132	   a0ac	HELLO2.elf
+Finished building: default.size.stdout
+ 
+Finished building: HELLO2.list
+ 
+15:47:48 **** Incremental Build of configuration Debug for project HELLO2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4R5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Task_action':
+../Core/Src/main.c:410:22: warning: passing argument 1 of 'ITM_SendChar' makes integer from pointer without a cast [-Wint-conversion]
+  410 |         ITM_SendChar(&message);
+      |                      ^~~~~~~~
+      |                      |
+      |                      char **
+In file included from ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4r5xx.h:169,
+                 from ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h:163,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h:29,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32l4xx_hal_conf.h:258,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Include/core_cm4.h:2059:49: note: expected 'uint32_t' {aka 'long unsigned int'} but argument is of type 'char **'
+ 2059 | __STATIC_INLINE uint32_t ITM_SendChar (uint32_t ch)
+      |                                        ~~~~~~~~~^~
+../Core/Src/main.c: In function 'StartTask01':
+../Core/Src/main.c:431:23: warning: passing argument 1 of 'Task_action' makes pointer from integer without a cast [-Wint-conversion]
+  431 |           Task_action(1);
+      |                       ^
+      |                       |
+      |                       int
+../Core/Src/main.c:409:25: note: expected 'char *' but argument is of type 'int'
+  409 | void Task_action(char * message){
+      |                  ~~~~~~~^~~~~~~
+../Core/Src/main.c: In function 'StartTask02':
+../Core/Src/main.c:454:23: warning: passing argument 1 of 'Task_action' makes pointer from integer without a cast [-Wint-conversion]
+  454 |           Task_action(2);
+      |                       ^
+      |                       |
+      |                       int
+../Core/Src/main.c:409:25: note: expected 'char *' but argument is of type 'int'
+  409 | void Task_action(char * message){
+      |                  ~~~~~~~^~~~~~~
+arm-none-eabi-gcc -o "HELLO2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HELLO2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HELLO2.elf
+ 
+arm-none-eabi-size  HELLO2.elf 
+arm-none-eabi-objdump -h -S HELLO2.elf  > "HELLO2.list"
+   text	   data	    bss	    dec	    hex	filename
+  30956	     96	  10080	  41132	   a0ac	HELLO2.elf
+Finished building: default.size.stdout
+ 
+Finished building: HELLO2.list
+ 
+15:49:24 **** Incremental Build of configuration Debug for project HELLO2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L4R5xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "HELLO2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\baron\OneDrive\skola\data\5_semestr\SRC\STM32\HELLO2\STM32L4R5ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HELLO2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: HELLO2.elf
+ 
+arm-none-eabi-size  HELLO2.elf 
+arm-none-eabi-objdump -h -S HELLO2.elf  > "HELLO2.list"
+   text	   data	    bss	    dec	    hex	filename
+  30956	     96	  10080	  41132	   a0ac	HELLO2.elf
+Finished building: default.size.stdout
+ 
+Finished building: HELLO2.list
+ 
