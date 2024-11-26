@@ -38,6 +38,7 @@
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
 uint32_t ExecTime=0;
+uint32_t filter=0;
 uint32_t ADCData=0;
 uint32_t k = 0;
 uint32_t N = 10;
@@ -133,6 +134,7 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim3);
   HAL_ADC_Start_IT(&hadc1);
   HAL_DAC_Start(&hdac1, DAC1_CHANNEL_1);
+  HAL_DAC_SetValue(&hdac1, DAC_CHANNEL_1, DAC_ALIGN_12B_R, 2048);
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -632,30 +634,20 @@ void HAL_ADC_ConvCpltCallback (ADC_HandleTypeDef * hadc) {
 void StartFiltrace(void *argument)
 {
   /* USER CODE BEGIN 5 */
-  uint32_t x; // Proměnná pro aktuální vzorek
-  uint32_t buffer[N] = {0}; // Kruhový buffer pro N vzorků, inicializován na 0
-  int index = 0; // Index pro přístup do bufferu
-  uint32_t sum = 0; // Součet všech prvků v bufferu
+  uint32_t buffer[N] = {0};
+  int index = 0;
+  uint32_t sum = 0;
 
   /* Infinite loop */
   for (;;)
   {
-    // Získání nového ADC vzorku
-    x = HAL_ADC_GetValue(&hadc1);
-
-    // Aktualizace bufferu
-    sum -= buffer[index]; // Odečti starý prvek z celkového součtu
-    buffer[index] = x; // Přepiš aktuální prvek novým vzorkem
-    sum += x; // Přičti nový prvek do celkového součtu
-
-    // Posun indexu v kruhovém bufferu
+	osSemaphoreAcquire(Semaphore1Handle, osWaitForever);
+    ADCData = HAL_ADC_GetValue(&hadc1);
+    sum -= buffer[index];
+    buffer[index] = ADCData;
+    sum += ADCData;
     index = (index + 1) % N;
-
-    // Výpočet klouzavého průměru
-    ADCData = sum / N;
-
-    // Synchronizace s dalšími úkoly (pokud je potřeba)
-    osSemaphoreAcquire(Semaphore1Handle, osWaitForever);
+    filter = sum / N;
   }
   /* USER CODE END 5 */
 }
